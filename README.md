@@ -1,33 +1,33 @@
-# Island World (IW)
+# Island World
 
-> Overworld 80%% ocean with scattered small-to-medium islands. Vanilla ores compressed into islands; oceanic structures keep normal placement.
+> Overworld is 80% ocean and 20% scattered islands. Vanilla ores compress into the islands. Oceanic structures (monuments, shipwrecks) keep their normal placement and become more visible. Boat / ship mods strongly recommended.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Modrinth](https://img.shields.io/badge/Modrinth-island-world-00AF5C)](https://modrinth.com/mod/island-world)
-[![CurseForge](https://img.shields.io/badge/CurseForge-island-world-F16436)](https://www.curseforge.com/minecraft/mc-mods/island-world)
+[![NeoForge 1.21.1](https://img.shields.io/badge/NeoForge-1.21.1-orange.svg)](https://neoforged.net)
+[![Depends on Isekai API](https://img.shields.io/badge/Depends-Isekai%20API-9333ea)](https://github.com/KURONAMI333/isekai-api)
 
 ---
 
-## Supported Loaders / Versions
+## Concept
 
-| Minecraft | NeoForge | Forge | Fabric |
-|---|:---:|:---:|:---:|
-| 1.21.1 | TBD | TBD | TBD |
-| 1.20.1 |  —  | TBD | TBD |
+A scattered archipelago: hundreds of small-to-medium islands, separated by stretches of open sea. Mining and farming happen on the islands; travel and exploration happen across the water. Monuments and shipwrecks become landmarks instead of side content.
 
-(TBD: 実装後に更新)
+Pairs naturally with boat / ship mods (Small Ships, Boats & Bonfires) and fishing mods (Aquaculture 2). Without them, traversal can feel slow by design.
 
----
+## How it works
 
-## Why?
+Island World is built on **[Isekai API](https://github.com/KURONAMI333/isekai-api)**, a neutral universal worldgen library.
 
-(目的、解決する問題を 2-3 行で)
+The library has no concept of "archipelago" — Island World composes `step`, `mask_y_range`, and rule-adaptation primitives that Isekai API offers, into a scattered-island worldshape.
 
-## Installation
+## Status
 
-1. ローダー導入
-2. 依存 MOD 導入（あれば）
-3. `island-world-X.Y.Z-{loader}-{mc}.jar` を `mods/` に配置
+**v0.1**: skeleton. `WorldshapeDescriptor` declaration + density composition land with Isekai API v0.2.
+
+## Dependencies
+
+- NeoForge 1.21.1
+- [Isekai API](https://github.com/KURONAMI333/isekai-api) (required)
 
 ## License
 
