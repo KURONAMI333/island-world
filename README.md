@@ -36,3 +36,9 @@ The library has no concept of "archipelago" — Island World composes `step`, `m
 ## Credits
 
 - Author: KURONAMI
+
+## Downloads and support
+
+For bugs and questions, DM [@kuronami333 on X](https://x.com/kuronami333).
+
+[Source](https://github.com/KURONAMI333/island-world) · [License](LICENSE)
